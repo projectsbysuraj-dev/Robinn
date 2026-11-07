@@ -253,7 +253,7 @@ body.night #next{color:#ffc857}
 <section class="page alt" id="pgQ">
 <div class="lbl">LAST · EK SAWAAL</div>
 <div class="hero2 sm"><div class="halo"></div><div class="duo d2" id="duoQ"></div></div>
-<h1 id="qh">Will you marry me? 💍</h1>
+<h1 id="qh">Will you be mine forever? 💍</h1>
 <p id="qp">Ek chhota sa sawaal, ek bada sa dil ♡</p>
 <div class="qb" id="qb"><button class="btn" id="yes">Haan ❤️</button><button class="btn no" id="no">Nahi 🙈</button></div>
 <p class="by">Made by Nancy</p>
@@ -343,7 +343,7 @@ function bang(sz){var t=tip();document.body.insertAdjacentHTML('beforeend','<div
 function finish(d){tmo.push(setTimeout(function(){done=1;$('again').style.display='block';reveal();mh.textContent='Wah! Maza aaya? Firse fodna hai? 😎'},d))}
 function fkGo(){$("fkimg").src=IM[1];var e=$("fk2");e.classList.remove("on2");setTimeout(function(){if(cur==6)boom(innerWidth/2,innerHeight*.4)},700);setTimeout(function(){if(cur==6){e.classList.add("on2");reveal()}},2400)}
 var NO=['Ek baar aur soch lo na 🥺','Please maan jao na, main bahut pyaar se puchh rahi hun 🥹','Aise mat karo yaar, dil toot jayega 💔','Main tumhare liye roz chai bana dungi ☕','Dekho, Haan wala button kitna bada ho gaya. Usi ko dabao na 😭','Diwali ka gift samajh ke maan jao 🎁','Ab to bear bhi udaas ho gaya 🧸💔','Tum haan bologe na? Pleaseee 🥺👉👈','Aisa kaun karta hai meri jaan 😭','Last chance, haan bol do na ❤️'],ni=0,ys=1;
-function resetQ(){ni=0;ys=1;$('qh').textContent='Will you marry me? 💍';$('qp').textContent='Ek chhota sa sawaal, ek bada sa dil ♡';$('qb').style.display='flex';$('again2').style.display='none';$('yes').style.cssText='';$('no').style.cssText='';$('duoQ').classList.remove('happy')}
+function resetQ(){ni=0;ys=1;$('qh').textContent='Will you be mine forever? 💍';$('qp').textContent='Ek chhota sa sawaal, ek bada sa dil ♡';$('qb').style.display='flex';$('again2').style.display='none';$('yes').style.cssText='';$('no').style.cssText='';$('duoQ').classList.remove('happy')}
 $('no').onclick=function(){initA();$('qp').textContent=NO[ni%NO.length];ni++;ys=Math.min(2.3,ys+.17);var y=$('yes');y.style.transform='scale('+ys+')';y.style.marginBottom=((ys-1)*24)+'px';y.style.marginTop=((ys-1)*10)+'px';$('no').style.transform='scale('+Math.max(.65,1-ni*.04)+')';nz(.12,900,'lowpass',.5);var d=$('duoQ');d.classList.remove('sad');void d.offsetWidth;d.classList.add('sad')};
 $('yes').onclick=function(){initA();$('qh').textContent='Thank you meri jaan! 🥹💖';$('qp').textContent='Tumhari ek haan ne meri poori Diwali roshan kar di. Main hamesha tumhari rahungi, bas tum yun hi muskurate rehna ♡';$('qb').style.display='none';$('duoQ').classList.add('happy');nz(.5,2500,'highpass',.3);[0,300,600,900,1200,1500].forEach(function(d,i){setTimeout(function(){boom(innerWidth*(.15+R()*.7),innerHeight*(.2+R()*.3));hearts()},d)});setTimeout(function(){$('again2').style.display='inline-block'},1800)};
 function hdText(){var e=$('hdt');e.innerHTML='Happy Diwali<br><small style="font-size:.5em;color:#fff4e0">'+NAME+' 🪔</small>';e.classList.remove('on');void e.offsetWidth;e.classList.add('on')}
